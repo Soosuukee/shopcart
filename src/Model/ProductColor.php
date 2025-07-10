@@ -3,19 +3,18 @@
 namespace Soosuuke\Shopcart\Model;
 
 use Soosuuke\Shopcart\Model\Product;
-use Soosuuke\Shopcart\Model\Material;
+use Soosuuke\Shopcart\Model\Color;
 
 
-
-class ProductMaterial
+class ProductColor
 {
     private Product $product;
-    private Material $material;
+    private Color $color;
 
-    public function __construct(Product $product, Material $material)
+    public function __construct(Product $product, Color $color)
     {
         $this->product = $product;
-        $this->material = $material;
+        $this->color = $color;
     }
 
     public function getProduct(): Product
@@ -23,8 +22,8 @@ class ProductMaterial
         return $this->product;
     }
 
-    public function getMaterial(): Material
+    public function getColor(): Color
     {
-        return $this->material;
+        return $this->color;
     }
 }
