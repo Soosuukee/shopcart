@@ -2,7 +2,7 @@
 
 namespace Soosuuke\Shopcart\Model;
 
-class Category
+class Category implements \JsonSerializable
 {
     private int $id;
     private string $name;
@@ -23,8 +23,12 @@ class Category
         return $this->name;
     }
 
-    public function setName(string $name): void
+    // Cette méthode permet à json_encode() de sérialiser proprement l'objet
+    public function jsonSerialize(): mixed
     {
-        $this->name = $name;
+        return [
+            'id' => $this->id,
+            'name' => $this->name
+        ];
     }
 }

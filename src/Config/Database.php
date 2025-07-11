@@ -5,6 +5,8 @@ namespace Soosuuke\Shopcart\Config;
 use PDO;
 use PDOException;
 
+
+
 class Database
 {
     private static ?PDO $connection = null;
@@ -12,11 +14,11 @@ class Database
     public static function connect(): PDO
     {
         if (self::$connection === null) {
-            $host = $_ENV['DB_HOST'] ?? 'localhost';
-            $port = $_ENV['DB_PORT'] ?? '3306';
-            $db   = $_ENV['DB_NAME'] ?? 'shopcart_db';
-            $user = $_ENV['DB_USER'] ?? 'root';
-            $pass = $_ENV['DB_PASSWORD'] ?? '';
+            $host = $_ENV['DB_HOST'];
+            $port = $_ENV['DB_PORT'];
+            $db   = $_ENV['DB_NAME'];
+            $user = $_ENV['DB_USER'];
+            $pass = $_ENV['DB_PASSWORD'];
 
             $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
 

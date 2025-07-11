@@ -5,9 +5,7 @@ namespace Soosuuke\Shopcart\Model;
 use Soosuuke\Shopcart\Model\Product;
 use Soosuuke\Shopcart\Model\Material;
 
-
-
-class ProductMaterial
+class ProductMaterial implements \JsonSerializable
 {
     private Product $product;
     private Material $material;
@@ -26,5 +24,13 @@ class ProductMaterial
     public function getMaterial(): Material
     {
         return $this->material;
+    }
+
+    public function jsonSerialize(): mixed
+    {
+        return [
+            'product_id' => $this->product->getId(),
+            'material' => $this->material
+        ];
     }
 }

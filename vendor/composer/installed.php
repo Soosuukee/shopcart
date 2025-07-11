@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'hb/shopcart',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => 'b0049d27b330d50f02f3235b360f4a07631abfa5',
+        'pretty_version' => 'dev-devFlo',
+        'version' => 'dev-devFlo',
+        'reference' => '0d55f90e283c36b7755262f64b1757ccc7a01d9a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'hb/shopcart' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => 'b0049d27b330d50f02f3235b360f4a07631abfa5',
+            'pretty_version' => 'dev-devFlo',
+            'version' => 'dev-devFlo',
+            'reference' => '0d55f90e283c36b7755262f64b1757ccc7a01d9a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

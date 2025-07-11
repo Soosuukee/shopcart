@@ -5,8 +5,7 @@ namespace Soosuuke\Shopcart\Model;
 use Soosuuke\Shopcart\Model\Product;
 use Soosuuke\Shopcart\Model\Color;
 
-
-class ProductColor
+class ProductColor implements \JsonSerializable
 {
     private Product $product;
     private Color $color;
@@ -25,5 +24,13 @@ class ProductColor
     public function getColor(): Color
     {
         return $this->color;
+    }
+
+    public function jsonSerialize(): mixed
+    {
+        return [
+            'product_id' => $this->product->getId(),
+            'color' => $this->color
+        ];
     }
 }

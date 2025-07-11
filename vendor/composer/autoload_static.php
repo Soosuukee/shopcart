@@ -22,6 +22,8 @@ class ComposerStaticInit2151e0381a3fd7fc7401babd05acef14
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Soosuuke\\Shopcart\\Fixtures\\' => 27,
+            'Soosuuke\\Shopcart\\' => 18,
         ),
         'R' => 
         array (
@@ -31,10 +33,6 @@ class ComposerStaticInit2151e0381a3fd7fc7401babd05acef14
         'P' => 
         array (
             'PhpOption\\' => 10,
-        ),
-        'H' => 
-        array (
-            'Hb\\Shopcart\\' => 12,
         ),
         'G' => 
         array (
@@ -63,6 +61,14 @@ class ComposerStaticInit2151e0381a3fd7fc7401babd05acef14
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Soosuuke\\Shopcart\\Fixtures\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/fixtures',
+        ),
+        'Soosuuke\\Shopcart\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Respect\\Validation\\' => 
         array (
             0 => __DIR__ . '/..' . '/respect/validation/library',
@@ -74,10 +80,6 @@ class ComposerStaticInit2151e0381a3fd7fc7401babd05acef14
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
-        ),
-        'Hb\\Shopcart\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (

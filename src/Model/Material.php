@@ -2,7 +2,7 @@
 
 namespace Soosuuke\Shopcart\Model;
 
-class Material
+class Material implements \JsonSerializable
 {
     private int $id;
     private string $name;
@@ -26,5 +26,13 @@ class Material
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    public function jsonSerialize(): mixed
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name
+        ];
     }
 }
